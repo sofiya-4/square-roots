@@ -1,91 +1,3 @@
-Ex3: Rotated String ?
-
-Problem Description:
---------------------
-If s1 and s2 are 2 given strings , then write code to check whether s2 is a rotated version
-of s1 or not.
-
-Examples:
-
-if "javaj2eestrutshibernate" is a string then below are some rotated versions
-of this string.
-
-s1 - javaj2eestrutshibernate
-
-s3 = s1+s1 = javaj2eestrutshibernatejavaj2eestrutshibernate
-
-s2 = j2eestrutshibernatejava
-s2 = strutshibernatejavaj2ee
-s2 = hibernatejavaj2eestruts
-
-Input format:
-2 strings are given as input and each one in a separate line.
-
-Output:
-print yes if string s2 is rotated version of s1 else print no.
-
-Input:
-AECACETACOEADC
-ACETACOEADCAEC
-
-OUTPUT:
-yes
-
-Input2:
-javaj2eestrutshibernate
-strutshibernatejavaj2ee
-
-OUTPUT:
-yes
-
-Input3:
-javaj2eestrutshibernate
-strutshibernatejava
-
-OUTPUT:
-no
-
-Input4:
-s1 = aaaaa
-s2 = aaaaa
-
-output:
-yes
-
-package Pack1;
-import java.util.*;
-public class Rotated_String {
-public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	System.out.println("enter 2 strings:");
-	String s1 = sc.next();
-	String s2 = sc.next();
-	// step1
-	if (s1.length() != s2.length())
-	{
-		System.out.println("No");		
-	}
-	else
-	{
-		//step2
-		String s3 = s1 + s1;	
-		//step3
-		if(s3.contains(s2))
-		{
-			System.out.println("Yes");	
-		}
-		else
-		{
-			System.out.println("No");	
-		}
-	}
- 
-	}
-
-}
-
-=======================================================================
-
 Ex4: square root without library function ?
 
 Description:
@@ -132,4 +44,8 @@ System.out.println("Square root of "+n+" is "+sqrt);
 	}
 }
 
-=========================================================
+
+
+
+
+	
